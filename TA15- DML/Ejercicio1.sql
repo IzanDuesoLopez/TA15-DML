@@ -44,4 +44,13 @@ INSERT INTO directores values
     ('80808080', 'Johny', '80808080', 9),
     ('11223344', 'Antonio', '11223344', 10);
     
+    
+UPDATE despachos SET capacidad = 33 WHERE numero = 1;
+UPDATE directores SET nom_apels = 'Jorge' WHERE dni = '4256378';
+UPDATE despachos SET capacidad = 5 WHERE numero = '8';
+
+DELETE FROM directores WHERE dni = '55555555';
+DELETE FROM despachos WHERE numero = 3;
+DELETE FROM directores WHERE dni = '11223344';
+    
 SELECT * FROM directores;
